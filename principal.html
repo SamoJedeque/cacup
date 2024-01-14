@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
+    <title>Admin</title>
+</head>
+<body>
+    <header class="head">
+        <section class="head-left">
+            <div class="logo">
+                <p><span>Psico</span>CAPUP</p>
+            </div>
+            <button><i class="fa-solid fa-magnifying-glass"></i>Procurar Cliente <i class="fa-solid fa-caret-down"></i></button>
+        </section>
+        <secttion class="head-right">
+            <div class="sign-now">
+                <i class="fa-solid fa-user-plus"></i>
+                <input type="button" value="assinar agora">
+            </div>
+            <div class="live-section online">
+                <i class="fa-solid fa-video"></i>
+            </div>
+            <div class="notification">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="my-profile">
+                <img src="img/feed-image-5.png" style="width: 50px; height: 50px; border-radius: 50%;">
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </secttion>
+    </header>
+    <main class="container">
+        <!-- menu lateral -->
+        <aside class="side-menu">
+            <header>
+                <div>
+                    <i class="fa-solid fa-landmark"></i>
+                </div>
+                <span>Painel</span>
+            </header>
+            <nav>
+                <section onclick="clickedShow()">
+                    <div><i class="fa-solid fa-user"></i></div>
+                    <span>Clientes</span>
+                </section>
+                <section>
+                    <div><i class="fa-solid fa-calendar-days"></i></div>
+                    <span>Agenda</span>
+                </section>
+                <section>
+                    <div><i class="fa-solid fa-file"></i></div>
+                    <span>Relatório</span>
+                </section>
+                <section>
+                   <div><i class="fa-solid fa-money-bill"></i></div> 
+                    <span>Receitas</span>
+                </section>
+            </nav>
+        </aside>
+        <!-- outputs -->
+        <section class="main-content">
+            <section class="next-section">
+                <header>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span>Proximas secções</span>
+                </header>
+            </section>
+            <section class="incomes">
+                <header>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Relatorio financeiro</span>
+                </header>
+            </section>
+            <section class="activity">
+                <header>
+                    <div> <span>Pedências</span></div>
+                    <div><span>Actividade do Clintes </span></div>
+                    <div><span>Aniversiante do Mês</span></div>
+                </header>
+            </section>
+            <section class="tasks">
+                <header>
+                    <span>Actividade</span>
+                </header>
+            </section>
+        </section>
+
+        <!-- seccao para cadastrar o cliente -->
+        <section class="client-container">
+            <section class="client-form">
+                <i class="fa-solid fa-circle-xmark" onclick="clickedLike()"></i>
+                <header class="logotype">
+                    <h1><img src="img/logo.jpg" style="height: 50px; width: 50px; border-radius: 20px;"><span>Psico</span>CAPUP</h1>
+                </header>
+                <form class="formData">
+                    <p>Nome do cliente:</p>
+                    <input type="text" placeholder="Digite aqui" id="nome">
+                    <p>Seu E-mail:</p>
+                    <input type="email" placeholder="Digite aqui" id="email">
+                    <p>Seu número:</p>
+                    <input type="tel" placeholder="Digite aqui" id="tel">
+                    <p>Data de nascimento:</p>
+                    <input type="date" placeholder="Digite aqui" id="data">
+                    <p>Género:</p>
+                    <select name="tipo" id="type">
+                        <option value="">Selecione</option>
+                        <option value="Estudante" id="Masculino">Masculino</option>
+                        <option value="Profissional" id="Femenino">Femenino</option>
+                    </select>
+                    <p>Bairro:</p>
+                    <input type="text" placeholder="Digite aqui" id="bairro">
+                    <section class="submit" onclick="saveData()">
+                        <input type="button" value="Salvar os dados" class="button">
+                    </section>
+                </form>
+                <a href="#listClients" onclick="listClick()" class="link">Ver Clientes</a>
+            </section>
+        </section>
+
+        <section id="listClients">
+            <header class="list-header">
+                <div class="tittle">
+                    <h1>Lista de Clientes</h1>
+                </div>
+            </header>
+            <table>
+                <tr>
+                  <th>Nome</th>
+                  <th>E-mail</th>
+                  <th>Número</th>
+                  <th>Data de nascimento</th>
+                  <th>Género</th>
+                  <th>Bairro</th>
+                </tr>
+                <tr>
+                  <td>João Silva</td>
+                  <td>joaosilva@gmail.com</td>
+                  <td>840135687</td>
+                  <td>16/12/2002</td>
+                  <td>Masculino</td>
+                  <td>Aeroporto "A"</td>
+                </tr>
+                <tr>
+                  <td>Maria Santos</td>
+                  <td>mariasantos@gmail.com</td>
+                  <td>840135687</td>
+                  <td>05/02/1999</td>
+                  <td>Femenino</td>
+                  <td>Aeroporto "B"</td>
+                </tr>
+              </table>
+        </section>
+    </main>
+    <script src="js/principal.js"></script>
+</body>
+</html>

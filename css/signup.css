@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.logotype{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative ;
+    text-align: center;
+    left: 90px;  
+}
+.logotype h1 span{
+    color: #0ca7e0;
+}
+.logotype h1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+}
+.logotype h1 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+.signupform{
+    width: 25%;
+    position: fixed;
+    height: 100vh;
+    padding-top: 150px;
+}
+.signupform header{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.signupform header h1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    margin-left: 20%;
+}
+.signupform header h1 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+.img{
+    width: 75%;
+    height: 100vh; 
+    background:  url(../img/signup.jpg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    margin-left: 25%;
+}
+.formData{
+    text-align: center;
+}
+.formData p{
+    text-align: left;
+    padding-left: 40px;
+}
+.formData input{
+    width: 400px;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.formData select{
+    width: 400px;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.signupform .information{
+    text-align: center;
+}
+.link{
+    text-align: center;
+    margin-top: 20px;
+}
+.button{
+    background: #0ca7e0;
+    color: #fff;
+    cursor: pointer;
+}
+.submit{
+    display: inline;
+}
+.submit-two{
+    display: none;
+    margin-left: 40px;
+    
+}
+.submit-two input{
+    width: 400px;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.proceed{
+    background: #0ce06f;
+    color: #fff;
+    cursor: pointer;
+}
+.img{
+    text-align: center;
+}
+.img h1{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 10%;
+}
+#check{
+    display: none;
+}
+#myImage{
+    display: none;
+}

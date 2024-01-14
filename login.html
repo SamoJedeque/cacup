@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="aos-master/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>login | PsicoCACUP</title>
+</head>
+<body>
+    <section class="loginBack">
+        <div class="loginForm" data-aos="fade-up"data-aos-duration="1000">
+            <h1> <img src="img/logo.jpg"><span>Psico</span>CAPUP</h1>
+            <form action=""> 
+                <div class="error-txt"></div>
+                <label>E-mail</label>
+                <input type="email" name="email" placeholder="Introduza seu e-mail">
+                <label>Chave de segurança</label>
+                <input type="password" name="senha" placeholder="Introduza sua chave">
+                <div class="forget">
+                    <p></p>
+                    <p><a href="#">Esqueceu a senha</a></p>
+                </div>
+            </form>
+            <a href="principal.html"><input type="submit" value="Login" class="btnlogin"></a>
+            
+            <p class="Create-account"><a href="signup.html">Crie uma conta</a></p>
+        </div>
+    </section>
+    <script src="aos-master/aos-master/dist/aos.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+</script>
+</html>

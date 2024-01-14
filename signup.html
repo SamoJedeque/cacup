@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
+    <title>Registar-se</title>
+</head>
+<body>
+    <main class="container">
+        <section class="signupform">
+            <header class="logotype">
+                <h1><img src="img/logo.jpg"><span>Psico</span>CAPUP</h1>
+                <h5>
+                    Teste o PsicoManager gratuitamente
+                    Não requer cartão de crédito
+                </h5>
+            </header>
+            <form class="formData">
+                <p>Seu nome:</p>
+                <input type="text" placeholder="Digite aqui" class="myInput">
+                <p>Seu E-mail:</p>
+                <input type="email" placeholder="Digite aqui" class="myInput">
+                <p>Seu número:</p>
+                <input type="tel" placeholder="Digite aqui" class="myInput">
+                <p>Sobre você:</p>
+                <select name="tipo" id="type" class="myInput">
+                    <option value="Selecione">Selecione</option>
+                    <option value="Estudante">Sou estudante de Psicologia</option>
+                    <option value="Profissional">Sou profissional</option>
+                </select>
+                <p>Seu nome da sua Universidade:</p>
+                <input type="text" placeholder="Digite aqui" class="myInput">
+                <p>Data de conclusão do curso:</p>
+                <input type="text" placeholder="Digite aqui" class="myInput">
+                <section class="submit" onclick="showImage()"  id="submit-one">
+                    <input type="button" value="Salvar os dados" class="button">
+                </section>
+            </form>
+            <section class="submit-two" id="enter">
+                <a href="principal.html">
+                    <input type="button" value="proceder..." class="proceed">
+                </a>
+            </section>
+            <p class="information">
+                Ao informar meus dados, eu concordo com a <a href="#"> política de privacidade</a> e <a href="#">termos de uso</a>  do PsicoManager.
+            </p>
+            <p class="link">Já possue uma conta? <a href="login.html">Faça login</a></p>
+        </section>
+        <section class="img">
+            <h1>Tenha mais tempo para fazer <br> o que realmente importa</h1>
+            <section class="load">
+                <img src="img/1.gif" width="200px" height="200px" id="myImage">
+                <img src="img/check.png" width="200px" height="200px" id="check">
+            </section>
+        </section>
+    </main>
+    <script src="js/signup.js"></script>
+</body>
+</html>
